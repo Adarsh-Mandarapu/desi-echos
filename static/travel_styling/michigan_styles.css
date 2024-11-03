@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.sidenav {
+    width: 200px;
+    background-color: #f1f1f1;
+    height: 100vh;
+    padding: 20px;
+}
+.sidenav a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+.sidenav a:hover {
+    background-color: #ddd;
+}
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
