@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-Day Dubai Itinerary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        h1, h2, h3, h4 {
+            text-align: center;
+            color: #333;
+        }
+        .itinerary-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .left-panel {
+            width: 250px;
+            background-color: #fff;
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .attraction-box {
+            width: calc(50% - 20px);
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .carousel {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .carousel-item {
+            min-width: 100%;
+            height: 200px;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .carousel-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .carousel-control.prev { left: 10px; }
+        .carousel-control.next { right: 10px; }
+        .attraction-info {
+            padding: 15px;
+        }
+        .attraction-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .attraction-description {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .attraction-score {
+            font-weight: bold;
+            color: #e44d26;
+        }
+        .attraction-time {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+      <div class="left-panel">
+          <div class="panel-section">
+              <h3>Accommodation</h3>
+              <ul>
+                  <li>Burj Al Arab Jumeirah</li>
+                  <li>Atlantis, The Palm</li>
+                  <li>Armani Hotel Dubai</li>
+                  <li>Rove Downtown</li>
+              </ul>
+          </div>
+          <div class="panel-section">
+              <h3>Shopping</h3>
+              <ul>
+                  <li>The Dubai Mall</li>
+                  <li>Mall of the Emirates</li>
+                  <li>Gold Souk</li>
+                  <li>Global Village</li>
+              </ul>
+          </div>
+      </div>
+    <h1>Dubai</h1>
+    <h2>Day 1</h2>
+      <div class="itinerary-container">
+             <div class="attraction-box">
+                 <div class="carousel">
+                     <div class="carousel-inner">
+                         <div class="carousel-item"><img src="museum_future_1.jpg" alt="Museum of the Future 1"></div>
+                         <div class="carousel-item"><img src="museum_future_2.jpg" alt="Museum of the Future 2"></div>
+                         <div class="carousel-item"><img src="museum_future_3.jpg" alt="Museum of the Future 3"></div>
+                     </div>
+                     <a href="#" class="carousel-control prev" onclick="moveSlide(this, -1)">❮</a>
+                     <a href="#" class="carousel-control next" onclick="moveSlide(this, 1)">❯</a>
+                 </div>
+                 <div class="attraction-info">
+                     <div class="attraction-name">Museum of the Future</div>
+                     <div class="attraction-description">Futuristic museum exploring innovation</div>
+                     <div class="attraction-score">Worth watching: 9/10</div>
+                     <div class="attraction-time">Best time to visit: 10 AM - 12 PM</div>
+                 </div>
+             </div>
+             <div class="attraction-box">
+                 <div class="carousel">
+                     <div class="carousel-inner">
+                         <div class="carousel-item"><img src="dubai_mall_1.jpg" alt="Dubai Mall 1"></div>
+                         <div class="carousel-item"><img src="dubai_mall_2.jpg" alt="Dubai Mall 2"></div>
+                         <div class="carousel-item"><img src="dubai_mall_3.jpg" alt="Dubai Mall 3"></div>
+                     </div>
+                     <a href="#" class="carousel-control prev" onclick="moveSlide(this, -1)">❮</a>
+                     <a href="#" class="carousel-control next" onclick="moveSlide(this, 1)">❯</a>
+                 </div>
+                 <div class="attraction-info">
+                     <div class="attraction-name">Dubai Mall</div>
+                     <div class="attraction-description">World's largest shopping mall</div>
+                     <div class="attraction-score">Worth watching: 8/10</div>
+                     <div class="attraction-time">Best time to visit: 2 PM - 5 PM</div>
+                 </div>
+             </div>
+             <div class="attraction-box">
+                 <div class="carousel">
+                     <div class="carousel-inner">
+                         <div class="carousel-item"><img src="burj_khalifa_1.jpg" alt="Burj Khalifa 1"></div>
+                         <div class="carousel-item"><img src="burj_khalifa_2.jpg" alt="Burj Khalifa 2"></div>
+                         <div class="carousel-item"><img src="burj_khalifa_3.jpg" alt="Burj Khalifa 3"></div>
+                     </div>
+                     <a href="#" class="carousel-control prev" onclick="moveSlide(this, -1)">❮</a>
+                     <a href="#" class="carousel-control next" onclick="moveSlide(this, 1)">❯</a>
+                 </div>
+                 <div class="attraction-info">
+                     <div class="attraction-name">Burj Khalifa</div>
+                     <div class="attraction-description">World's tallest building</div>
+                     <div class="attraction-score">Worth watching: 10/10</div>
+                     <div class="attraction-time">Best time to visit: 4 PM - 6 PM</div>
+                 </div>
+             </div>
+             <div class="attraction-box">
+                 <div class="carousel">
+                     <div class="carousel-inner">
+                         <div class="carousel-item"><img src="fountain_burj_1.jpg" alt="Fountain at Burj 1"></div>
+                         <div class="carousel-item"><img src="fountain_burj_2.jpg" alt="Fountain at Burj 2"></div>
+                         <div class="carousel-item"><img src="fountain_burj_3.jpg" alt="Fountain at Burj 3"></div>
+                     </div>
+                     <a href="#" class="carousel-control prev" onclick="moveSlide(this, -1)">❮</a>
+                     <a href="#" class="carousel-control next" onclick="moveSlide(this, 1)">❯</a>
+                 </div>
+                 <div class="attraction-info">
+                     <div class="attraction-name">Fountain at Burj</div>
+                     <div class="attraction-description">Spectacular water fountain show</div>
+                     <div class="attraction-score">Worth watching: 9/10</div>
+                     <div class="attraction-time">Best time to visit: 6 PM - 11 PM</div>
+                 </div>
+             </div>
+    </div>
+
+    <h2>Day 2</h2>
+    <div class="itinerary-container">
+        <div class="attraction-box">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item"><img src="palm_sunrise_1.jpg" alt="Sunrise at The Palm 1"></div>
+                    <div class="carousel-item"><img src="palm_sunrise_2.jpg" alt="Sunrise at The Palm 2"></div>
+                    <div class="carousel-item"><img src="palm_sunrise_3.jpg" alt="Sunrise at The Palm 3"></div>
+                </div>
+                <a href="#" class="carousel-control prev" onclick="moveSlide(this, -1)">❮</a>
+                <a href="#" class="carousel-control next" onclick="moveSlide(this, 1)">❯</a>
+            </div>
+            <div class="attraction-info">
+                <div class="attraction-name">Sunrise at The Palm</div>
+                <div class="attraction-description">Breathtaking views of Dubai's iconic palm-shaped island</div>
+                <div class="attraction-score">Worth watching: 9/10</div>
+                <div class="attraction-time">Best time to visit: 5:30 AM - 7:00 AM</div>
+            </div>
+        </div>
+        <div class="attraction-box">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item"><img src="miracle_garden_1.jpg" alt="Miracle Garden 1"></div>
+                    <div class="carousel-item"><img src="miracle_garden_2.jpg" alt="Miracle Garden 2"></div>
+                    <div class="carousel-item"><img src="miracle_garden_3.jpg" alt="Miracle Garden 3"></div>
+                </div>
+                <a href="#" class="carousel-control prev" onclick="moveSlide(this, -1)">❮</a>
+                <a href="#" class="carousel-control next" onclick="moveSlide(this, 1)">❯</a>
+            </div>
+            <div class="attraction-info">
+                <div class="attraction-name">Miracle Garden</div>
+                <div class="attraction-description">World's largest natural flower garden</div>
+                <div class="attraction-score">Worth watching: 8/10</div>
+                <div class="attraction-time">Best time to visit: 9:00 AM - 11:00 AM</div>
+            </div>
+        </div>
+        <div class="attraction-box">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item"><img src="desert_safari_1.jpg" alt="Desert Safari 1"></div>
+                    <div class="carousel-item"><img src="desert_safari_2.jpg" alt="Desert Safari 2"></div>
+                    <div class="carousel-item"><img src="desert_safari_3.jpg" alt="Desert Safari 3"></div>
+                </div>
+                <a href="#" class="carousel-control prev" onclick="moveSlide(this, -1)">❮</a>
+                <a href="#" class="carousel-control next" onclick="moveSlide(this, 1)">❯</a>
+            </div>
+            <div class="attraction-info">
+                <div class="attraction-name">Desert Safari</div>
+                <div class="attraction-description">ATV rides, dinner in the desert, and more</div>
+                <div class="attraction-score">Worth experiencing: 10/10</div>
+                <div class="attraction-time">Best time to visit: 3:00 PM - 9:00 PM</div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Day 3</h2>
+    <div class="itinerary-container">
+        <div class="attraction-box">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item"><img src="gold_souk_1.jpg" alt="Gold Souk 1"></div>
+                    <div class="carousel-item"><img src="gold_souk_2.jpg" alt="Gold Souk 2"></div>
+                    <div class="carousel-item"><img src="gold_souk_3.jpg" alt="Gold Souk 3"></div>
+                </div>
+                <a href="#" class="carousel-control prev" onclick="moveSlide(this, -1)">❮</a>
+                <a href="#" class="carousel-control next" onclick="moveSlide(this, 1)">❯</a>
+            </div>
+            <div class="attraction-info">
+                <div class="attraction-name">Gold Souk</div>
+                <div class="attraction-description">Traditional market famous for gold jewelry</div>
+                <div class="attraction-score">Worth visiting: 8/10</div>
+                <div class="attraction-time">Best time to visit: 10:00 AM - 1:00 PM</div>
+            </div>
+        </div>
+        <div class="attraction-box">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item"><img src="spice_souk_1.jpg" alt="Spice Souk 1"></div>
+                    <div class="carousel-item"><img src="spice_souk_2.jpg" alt="Spice Souk 2"></div>
+                    <div class="carousel-item"><img src="spice_souk_3.jpg" alt="Spice Souk 3"></div>
+                </div>
+                <a href="#" class="carousel-control prev" onclick="moveSlide(this, -1)">❮</a>
+                <a href="#" class="carousel-control next" onclick="moveSlide(this, 1)">❯</a>
+            </div>
+            <div class="attraction-info">
+                <div class="attraction-name">Spice Souk</div>
+                <div class="attraction-description">Aromatic market with a variety of spices</div>
+                <div class="attraction-score">Worth visiting: 7/10</div>
+                <div class="attraction-time">Best time to visit: 1:00 PM - 3:00 PM</div>
+            </div>
+        </div>
+        <div class="attraction-box">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item"><img src="al_fahidi_1.jpg" alt="Al Fahidi Neighborhood 1"></div>
+                    <div class="carousel-item"><img src="al_fahidi_2.jpg" alt="Al Fahidi Neighborhood 2"></div>
+                    <div class="carousel-item"><img src="al_fahidi_3.jpg" alt="Al Fahidi Neighborhood 3"></div>
+                </div>
+                <a href="#" class="carousel-control prev" onclick="moveSlide(this, -1)">❮</a>
+                <a href="#" class="carousel-control next" onclick="moveSlide(this, 1)">❯</a>
+            </div>
+            <div class="attraction-info">
+                <div class="attraction-name">Al Fahidi Neighborhood</div>
+                <div class="attraction-description">Historic district showcasing traditional architecture</div>
+                <div class="attraction-score">Worth exploring: 9/10</div>
+                <div class="attraction-time">Best time to visit: 3:00 PM - 5:00 PM</div>
+            </div>
+        </div>
+        <div class="attraction-box">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item"><img src="jumeirah_beach_1.jpg" alt="Jumeirah Beach 1"></div>
+                    <div class="carousel-item"><img src="jumeirah_beach_2.jpg" alt="Jumeirah Beach 2"></div>
+                    <div class="carousel-item"><img src="jumeirah_beach_3.jpg" alt="Jumeirah Beach 3"></div>
+                </div>
+                <a href="#" class="carousel-control prev" onclick="moveSlide(this, -1)">❮</a>
+                <a href="#" class="carousel-control next" onclick="moveSlide(this, 1)">❯</a>
+            </div>
+            <div class="attraction-info">
+                <div class="attraction-name">Jumeirah Beach</div>
+                <div class="attraction-description">Popular beach with views of Burj Al Arab</div>
+                <div class="attraction-score">Worth visiting: 8/10</div>
+                <div class="attraction-time">Best time to visit: 5:00 PM - Sunset</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function moveSlide(button, direction) {
+            const carousel = button.closest('.carousel');
+            const inner = carousel.querySelector('.carousel-inner');
+            const items = carousel.querySelectorAll('.carousel-item');
+            const itemWidth = items[0].offsetWidth;
+
+            let position = inner.style.transform ? parseInt(inner.style.transform.slice(11)) : 0;
+            position += direction * itemWidth;
+
+            if (position > 0) {
+                position = -(items.length - 1) * itemWidth;
+            } else if (position < -(items.length - 1) * itemWidth) {
+                position = 0;
+            }
+
+            inner.style.transform = `translateX(${position}px)`;
+        }
+    </script>
+</body>
+</html>
