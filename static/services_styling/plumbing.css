@@ -1,0 +1,17 @@
+/* Custom CSS for additional styling if needed */
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.container {
+    max-width: 800px;
+}

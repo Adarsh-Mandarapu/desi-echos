@@ -4,58 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desi Echos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../static/home.css">
 </head>
 <body>
-    <div class="navbar">
-        <a href="index.html" class="logo">Desi Echos</a>
-        <div class="dropdown">
-            <button class="dropbtn">City Classifieds
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#windsor">Windsor</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">Itinerary
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="itinerary/dubai/dubai.html">Dubai</a>
-                <a href="itinerary/dubai/north-carolina.html">North Carolina</a>
-                <a href="itinerary/dubai/michigan.html">Michigan</a>
-                <a href="itinerary/dubai/new-york.html">New York</a>
-                <a href="itinerary/dubai/illinois.html">Illinois</a>
-                <a href="itinerary/dubai/texas.html">Texas</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">Food
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Coffee</a>
-                <a href="#">Beer</a>
-                <a href="#">Whiskey</a>
-            </div>
-        </div>
-        <a href="#services">Services</a>
-        <a href="#electronics">Electronics</a>
-        <div class="dropdown">
-            <button class="dropbtn">Apparel
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Flip Flops</a>
-                <a href="#">Sunglasses</a>
-                <a href="#">Sneakers</a>
-                <a href="#">Designer Shirts</a>
-            </div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Desi Echos</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <!-- City Classifieds Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="cityDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    City Classifieds
+                </a>
+                <div class="dropdown-menu" aria-labelledby="cityDropdown">
+                    <a class="dropdown-item" href="classifieds/windsor/windsor.html">Windsor</a>
+                </div>
+            </li>
+
+            <!-- Itinerary Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="itineraryDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Itinerary
+                </a>
+                <div class="dropdown-menu" aria-labelledby="itineraryDropdown">
+                    <a class="dropdown-item" href="itinerary/dubai/dubai.html">Dubai</a>
+                    <a class="dropdown-item" href="itinerary/north-carolina/north-carolina.html">North Carolina</a>
+                    <a class="dropdown-item" href="itinerary/michigan/michigan.html">Michigan</a>
+                    <a class="dropdown-item" href="itinerary/new-york/new-york.html">New York</a>
+                </div>
+            </li>
+
+            <!-- Food Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="foodDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Food
+                </a>
+                <div class="dropdown-menu" aria-labelledby="foodDropdown">
+                    <a class="dropdown-item" href="#">Coffee</a>
+                    <a class="dropdown-item" href="#">Beer</a>
+                    <a class="dropdown-item" href="#">Whiskey</a>
+                </div>
+            </li>
+
+            <!-- Direct Links -->
+            <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#electronics">Electronics</a>
+            </li>
+
+            <!-- Apparel Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="apparelDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Apparel
+                </a>
+                <div class="dropdown-menu" aria-labelledby="apparelDropdown">
+                    <a class="dropdown-item" href="#">Flip Flops</a>
+                    <a class="dropdown-item" href="#">Sunglasses</a>
+                    <a class="dropdown-item" href="#">Sneakers</a>
+                    <a class="dropdown-item" href="#">Designer Shirts</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Main Content Section -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1 class="display-4">Welcome to Desi Echos</h1>
+            <p class="lead">Explore our website for information on travel, food, services, and electronics.</p>
         </div>
     </div>
 
-    <h1>Welcome to Desi Echos</h1>
-    <p>Explore our website for information on travel, food, services, and electronics.</p>
+    <div class="row mt-4">
+        <div class="col-md-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Travel</h5>
+                    <p class="card-text">Discover itineraries and travel guides for popular destinations.</p>
+                    <a href="#itinerary" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Food</h5>
+                    <p class="card-text">Find the best places for coffee, beer, whiskey, and more.</p>
+                    <a href="#food" class="btn btn-primary">Discover</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Services</h5>
+                    <p class="card-text">Get in touch with handymen, electricians, plumbers, and more.</p>
+                    <a href="#services" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Electronics</h5>
+                    <p class="card-text">Explore the latest electronics and gadgets for every need.</p>
+                    <a href="#electronics" class="btn btn-primary">Browse</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JavaScript and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

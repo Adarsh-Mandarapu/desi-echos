@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windsor Services</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../static/home.css">
+    <script>
+        // Function to load content into the iframe and display it
+        function loadContent(page) {
+            const iframe = document.getElementById("content-frame");
+            iframe.src = page;
+            iframe.style.display = "block"; // Show the iframe
+        }
+    </script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Desi Echos</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <!-- City Classifieds Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="cityDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    City Classifieds
+                </a>
+                <div class="dropdown-menu" aria-labelledby="cityDropdown">
+                    <a class="dropdown-item" href="windsor.html">Windsor</a>
+                </div>
+            </li>
+
+            <!-- Itinerary Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="itineraryDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Itinerary
+                </a>
+                <div class="dropdown-menu" aria-labelledby="itineraryDropdown">
+                    <a class="dropdown-item" href="../../itinerary/dubai/dubai.html">Dubai</a>
+                    <a class="dropdown-item" href="../../itinerary/north-carolina/north-carolina.html">North Carolina</a>
+                    <a class="dropdown-item" href="../../itinerary/michigan/michigan.html">Michigan</a>
+                    <a class="dropdown-item" href="../../itinerary/new-york/new-york.html">New York</a>
+                </div>
+            </li>
+
+            <!-- Food Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="foodDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Food
+                </a>
+                <div class="dropdown-menu" aria-labelledby="foodDropdown">
+                    <a class="dropdown-item" href="#">Coffee</a>
+                    <a class="dropdown-item" href="#">Beer</a>
+                    <a class="dropdown-item" href="#">Whiskey</a>
+                </div>
+            </li>
+
+            <!-- Direct Links -->
+            <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#electronics">Electronics</a>
+            </li>
+
+            <!-- Apparel Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="apparelDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Apparel
+                </a>
+                <div class="dropdown-menu" aria-labelledby="apparelDropdown">
+                    <a class="dropdown-item" href="#">Flip Flops</a>
+                    <a class="dropdown-item" href="#">Sunglasses</a>
+                    <a class="dropdown-item" href="#">Sneakers</a>
+                    <a class="dropdown-item" href="#">Designer Shirts</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Main Content Section -->
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+            <div class="sidebar-sticky pt-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="#">Handyman</a>
+                        <ul class="list-unstyled ml-3">
+                            <li><a href="#" onclick="loadContent('plumbing.html')">Plumbing</a></li>
+                            <li><a href="#" onclick="loadContent('electricity.html')">Electricity</a></li>
+                            <li><a href="#" onclick="loadContent('flooring.html')">Flooring</a></li>
+                            <li><a href="#" onclick="loadContent('cleaning.html')">Cleaning</a></li>
+                            <li><a href="#" onclick="loadContent('gardening.html')">Gardening</a></li>
+                            <li><a href="#" onclick="loadContent('moving.html')">Packers & Movers</a></li>
+                            <li><a href="#" onclick="loadContent('managers.html')">Property Managers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="#">Food</a>
+                        <ul class="list-unstyled ml-3">
+                            <li><a href="#" onclick="loadContent('cakes.html')">Cakes</a></li>
+                            <li><a href="#" onclick="loadContent('tiffins.html')">Tiffins</a></li>
+                            <li><a href="#" onclick="loadContent('batter.html')">Idly-Dosa Batter</a></li>
+                            <li><a href="#" onclick="loadContent('restaurants.html')">Restaurants</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="#">Clothing</a>
+                        <ul class="list-unstyled ml-3">
+                            <li><a href="#" onclick="loadContent('traditional.html')">Traditional Clothes</a></li>
+                            <li><a href="#" onclick="loadContent('stitching.html')">Stitching</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="#">Rides</a>
+                        <ul class="list-unstyled ml-3">
+                            <li><a href="#" onclick="loadContent('rides.html')">Rides</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Content Area -->
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+            <div class="content">
+                <iframe id="content-frame" class="w-100" style="height: 600px; border: none; display: none;"></iframe>
+            </div>
+        </main>
+    </div>
+</div>
+
+<!-- Bootstrap JavaScript and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
